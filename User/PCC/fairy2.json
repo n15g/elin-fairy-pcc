@@ -1,0 +1,26 @@
+{
+  "$id": "1",
+  "map": {
+    "$id": "2",
+    "body": [
+      "female",
+      "fairyf",
+      null
+    ],
+    "undie": [
+      "female",
+      "fairy1",
+      null
+    ],
+    "eye": [
+      "female",
+      "fairy1",
+      "5D4940"
+    ],
+    "mantle": [
+      "female",
+      "fairy2",
+      null
+    ]
+  }
+}
