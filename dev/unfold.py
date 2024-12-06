@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from dev.console import COLOR
 from dev.layer_comps import unfold_portraits, unfold_mantles
 from dev.project import CopyResult
@@ -30,3 +32,5 @@ def _display_status(cr: CopyResult):
 _display_result("Portrait", unfold_portraits())
 print("\n----------\n")
 _display_result("Mantle", unfold_mantles())
+print("\n----------\n")
+print(f"Completed unwrap at {datetime.now().isoformat()}")
