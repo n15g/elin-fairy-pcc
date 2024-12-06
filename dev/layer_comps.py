@@ -61,7 +61,7 @@ def unfold_mantles() -> dict[str, dict[str, CopyResult]]:
 
         mantle['psd'] = CopyResult.UNMODIFIED if os.path.exists(psd_path) else CopyResult.MISSING
         mantle['base'] = _rename(base_layer_path, base_path)
-        mantle['overlay'] = _rename(back_layer_path, back_path)
+        mantle['back'] = _rename(back_layer_path, back_path)
         mantles[base] = mantle
 
     return mantles
