@@ -31,6 +31,7 @@ class Project:
     actor_dir = os.path.join(root, "Actor")
     actor_female_dir = os.path.join(actor_dir, "PCC", "female")
     pcc_templates_dir = os.path.join(root, "User", "PCC")
+    aseprite_dir = os.path.join(root, "dev", "aseprite")
 
     @staticmethod
     def copy(src: str, dst: str) -> CopyResult:
