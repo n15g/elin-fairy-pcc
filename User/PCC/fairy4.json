@@ -15,12 +15,17 @@
     "eye": [
       "female",
       "fairy1",
-      "5D4940"
+      "8E6042FF"
     ],
     "mantle": [
       "female",
       "fairy4",
       null
+    ],
+    "hair": [
+      "female",
+      "fairy4",
+      "924222FF"
     ]
   }
 }
