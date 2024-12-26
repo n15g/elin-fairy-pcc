@@ -15,8 +15,13 @@ def _display_result(desc: str, result: dict[str, dict[str, CopyResult]]):
         print(line)
 
 
-_display_result("Portrait", unfold_portraits())
+portraits_result = unfold_portraits()
+mantles_result = unfold_mantles()
+
+_display_result("Portrait", portraits_result)
 print("\n----------\n")
-_display_result("Mantle", unfold_mantles())
-print("\n----------\n")
+
+# Moved to Aseprite
+# _display_result("Mantle", mantles_result)
+# print("\n----------\n")
 print(f"Completed unwrap at {datetime.now().isoformat()}")
