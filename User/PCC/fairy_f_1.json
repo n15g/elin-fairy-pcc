@@ -7,20 +7,25 @@
       "fairyf1",
       null
     ],
-    "undie": [
-      "female",
-      "fairy1",
-      null
-    ],
-    "eye": [
-      "female",
-      "fairy1",
-      "5D4940FF"
-    ],
     "mantle": [
       "female",
       "fairy1",
       null
+    ],
+    "hair": [
+      "female",
+      "fairy1",
+      "AF925EFF"
+    ],
+    "undie": [
+      "female",
+      "fairy5",
+      "42442EFF"
+    ],
+    "eye": [
+      "female",
+      "fairy1",
+      "8E5837FF"
     ]
   }
 }
