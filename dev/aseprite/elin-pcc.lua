@@ -14,12 +14,12 @@ local exported = { "Exported:" }
 -- [  front   ][   left   ][    right    ][     back     ]
 -- [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16]
 --
--- Special PCC types:
+-- Special layer types:
 --
--- Mantles:
--- Mantles have two sprites, one layered in front and one behind the player character.
--- During export, the script will look for a layer group named `_back`, and if found, use this layer group as the
--- basis for the `mantlebk` sprite.
+-- Back sprites:
+-- Some attachments have two sprites, one layered in front and one behind the player character.
+-- During export, the script will look for a layer group named `_back` and if found use this layer group as the
+-- basis for the `<type>bk` sprite.
 
 local function findLayerRecursive(layers, target)
     for _, layer in ipairs(layers) do
@@ -53,28 +53,28 @@ end
 if is_pcc then
     local type, name = title:match("^pcc_([^_]*)_(.*)$")
 
-    local base_fn = "pcc_" .. type .. "_" .. name .. ".png"
-    exportPCC("_base", path .. base_fn)
-    table.insert(exported, base_fn)
+    local base_filename = "pcc_" .. type .. "_" .. name .. ".png"
+    exportPCC("_base", path .. base_filename)
+    table.insert(exported, base_filename)
 
-    if type == "mantle" and findLayerRecursive(spr.layers, "_back") then
-        local back_fn = "pcc_mantlebk_" .. name .. ".png"
-        exportPCC("_back", path .. back_fn)
-        table.insert(exported, back_fn)
+    if findLayerRecursive(spr.layers, "_back") then
+        local back_filename = "pcc_" .. type .. "bk_" .. name .. ".png"
+        exportPCC("_back", path .. back_filename)
+        table.insert(exported, back_filename)
     end
 
 else
     -- Not a PCC file, just export as standard
-    local fn = title .. ".png"
+    local filename = title .. ".png"
 
     app.command.ExportSpriteSheet {
         ui = false,
         recent = false,
         askOverwrite = false,
         type = SpriteSheetType.ROWS,
-        textureFilename = path .. fn
+        textureFilename = path .. filename
     }
-    table.insert(exported, fn)
+    table.insert(exported, filename)
 
 end
 
