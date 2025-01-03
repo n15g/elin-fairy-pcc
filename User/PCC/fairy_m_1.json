@@ -7,29 +7,34 @@
       "fairym1",
       null
     ],
-    "eye": [
-      "female",
-      "fairy1",
-      "5D4940FF"
-    ],
     "mantle": [
       "female",
-      "fairy3",
+      "fairy8",
       null
     ],
     "hair": [
       "female",
       "fairy4",
-      "684228FF"
+      "5B3A24FF"
     ],
-    "cloth": [
+    "undie": [
       "female",
-      "fairy4",
+      "fairy8",
       null
+    ],
+    "eye": [
+      "female",
+      "fairy2",
+      "324628FF"
     ],
     "boots": [
       "female",
       "fairy1",
+      "684228FF"
+    ],
+    "cloth": [
+      "female",
+      "fairy10",
       null
     ]
   }
