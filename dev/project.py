@@ -30,7 +30,7 @@ class Project:
     portrait_dir = os.path.join(root, "Portrait")
     actor_dir = os.path.join(root, "Actor")
     actor_female_dir = os.path.join(actor_dir, "PCC", "female")
-    pcc_templates_dir = os.path.join(root, "User", "PCC")
+    pcc_templates_dir = os.path.join(root, "template")
     aseprite_dir = os.path.join(root, "dev", "aseprite")
 
     @staticmethod

@@ -21,6 +21,21 @@ Fairy portraits are all full-body to reflect the smaller stature of the fae.
 
 ![Layer Comps](site/portraits.png)
 
+### Character Creation
+
+Since the game cannot differentiate fairy sprites from default sprites, you'll often find that the initial random
+character will be confusing a mix of the two. Fairy sprites are all prefixed with `fairy` to make it easier to
+find compatible sprites.
+
+#### Wings and Imports
+Since the back slot is not available during the initial character creator you will need to either
+use an import file with wings already set, or find a mirror in-game to adjust the back slot after creation.
+
+Included in the mod directory is a set of templates for fairy characters with wings and outfits pre-applied.
+
+You can find the mod folder by using the `Mod Viewer` on the title screen. Click the mod name and then `Open in Explorer`.
+Use the files in the `template` folder with the `Import` function during character creation.
+
 ## Known Issues
 
 ### Items
