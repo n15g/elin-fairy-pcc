@@ -28,9 +28,10 @@ class CopyResult(Enum):
 class Project:
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     portrait_dir = os.path.join(root, "Portrait")
+    build_dir = os.path.join(root, "build")
     actor_dir = os.path.join(root, "Actor")
     actor_female_dir = os.path.join(actor_dir, "PCC", "female")
-    pcc_templates_dir = os.path.join(root, "template")
+    template_dir = os.path.join(root, "Template")
     aseprite_dir = os.path.join(root, "dev", "aseprite")
 
     @staticmethod
