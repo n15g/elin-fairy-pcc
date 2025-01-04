@@ -6,7 +6,10 @@ from pathlib import Path
 from dev.console import COLOR
 from dev.project import Project
 
-src_dir = Project.pcc_templates_dir
+# Install the character templates into the User's AppData folder.
+# Renames the .json files to .txt
+
+src_dir = Project.template_dir
 dst_dir = os.path.join(Path.home(), "AppData", "LocalLow", "Lafrontier", "Elin", "User", "PCC")
 
 json_files = glob.glob(os.path.join(src_dir, "*.json"))

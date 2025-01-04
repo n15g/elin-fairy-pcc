@@ -34,7 +34,10 @@ use an import file with wings already set, or find a mirror in-game to adjust th
 Included in the mod directory is a set of templates for fairy characters with wings and outfits pre-applied.
 
 You can find the mod folder by using the `Mod Viewer` on the title screen. Click the mod name and then `Open in Explorer`.
-Use the files in the `template` folder with the `Import` function during character creation.
+Use the files in the `Template` folder with the `Import` function during character creation.
+
+## Github
+https://github.com/n15g/elin-fairies
 
 ## Known Issues
 
