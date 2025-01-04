@@ -31,7 +31,7 @@ if os.path.exists(build_dir):
 os.makedirs(build_dir, exist_ok=True)
 
 
-root_files = ["LICENSE", "package.xml", "README.md"]
+root_files = ["LICENSE", "package.xml", "preview.jpg", "README.md"]
 for root_file in root_files:
     shutil.copy(os.path.join(Project.root, root_file), build_dir)
     print(f"{COLOR.GREEN}[{root_file}]{COLOR.RESET}")

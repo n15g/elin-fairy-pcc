@@ -42,13 +42,13 @@ https://github.com/n15g/elin-fairies
 ## Known Issues
 
 ### Items
-![beeg.png](site/beeg.png)
+![Beeg](site/beeg.png)
 
 Game items that appear on the character, like tools or some headpieces are not scaled down, so they appear comically
 large. For tools and weapons it's mostly amusing and stylistic, but clothing items look jarring.
 
 ### Zoom Aliasing
-![beeg.png](site/zoom.png)
+![Zoom](site/zoom.png)
 
 At the default zoom level the player sprites are slightly larger than the original sprite sheets. This causes some of
 the rows and columns to be duplicated, causing a wonky look. This happens with normal PCC sprites as well, but it's a lot
