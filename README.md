@@ -52,8 +52,8 @@ large. For tools and weapons it's mostly amusing and stylistic, but clothing ite
 
 At the default zoom level the player sprites are slightly larger than the original sprite sheets. This causes some of
 the rows and columns to be duplicated, causing a wonky look. This happens with normal PCC sprites as well, but it's a lot
-more pronounced with the smaller sprites that rely on single-pixel details. This can be fixed by adjusting the default
-zoom using the map tools button next to the minimap to adjust the zoom level.
+more pronounced with the smaller sprites that rely on single-pixel details. This can be fixed by adjusting the zoom
+using the map tools button next to the minimap.
 
 # Development
 
