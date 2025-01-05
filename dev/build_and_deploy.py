@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 from datetime import datetime
 
 from dev.console import COLOR
@@ -40,6 +41,16 @@ for root_file in root_files:
 tree_copy(os.path.join(Project.actor_dir, "**", "*.png"))
 tree_copy(os.path.join(Project.portrait_dir, "**", "*.png"))
 tree_copy(os.path.join(Project.template_dir, "**", "*.json"), ".txt")
+
+# Deploy
+
+deploy_dir = (len(sys.argv) > 1 and sys.argv[1]) or os.path.join("D:/", "Steam", "steamapps", "common", "Elin", "Package", "Mod_Fairy_PCC")
+
+if not os.path.exists(build_dir):
+    print(f"{COLOR.RED}Nothing built...{COLOR.RESET}")
+    exit(1)
+
+shutil.copytree(build_dir, deploy_dir, dirs_exist_ok=True)
 
 print()
 print(f"Completed build at {datetime.now().isoformat()}")
