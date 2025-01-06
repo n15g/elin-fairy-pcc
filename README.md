@@ -5,6 +5,7 @@
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-fairies)
 
 ### A Fairy PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
+
 I love that Elin lets you play as a fairy character, but was disappointed that the base
 game doesn't really offer any way to visually differentiate a fairy character from the other
 races.
@@ -12,7 +13,7 @@ races.
 ![Layer Comps](site/comparison.gif)
 
 This mod adds new portraits and sprites for fairy characters that are much smaller than the default sprites, including
-a bunch of pretty fairy wings. The smaller stature of the PCC can cause some visual glitches, noted below, but for the 
+a bunch of pretty fairy wings. The smaller stature of the PCC can cause some visual glitches, noted below, but for the
 most part it works well.
 
 ![Layer Comps](site/sprite_showcase.gif)
@@ -21,37 +22,56 @@ Fairy portraits are all full-body to reflect the smaller stature of the fae.
 
 ![Layer Comps](site/portraits.png)
 
-### Character Creation
+# Character Creation
 
 Since the game cannot differentiate fairy sprites from default sprites, you'll often find that the initial random
 character will be confusing a mix of the two. Fairy sprites are all prefixed with `fairy` to make it easier to
 find compatible sprites.
 
-#### Wings and Imports
+## Wings and Imports
+
 Since the back slot is not available during the initial character creator you will need to either
 use an import file with wings already set, or find a mirror in-game to adjust the back slot after creation.
 
 Included in the mod directory is a set of templates for fairy characters with wings and outfits pre-applied.
 
-You can find the mod folder by using the `Mod Viewer` on the title screen. Click the mod name and then `Open in Explorer`.
+You can find the mod folder by using the `Mod Viewer` on the title screen. Click the mod name and then
+`Open in Explorer`.
 Use the files in the `Template` folder with the `Import` function during character creation.
 
-## Github
+# Github
+
 https://github.com/n15g/elin-fairies
 
-## Known Issues
+# Release Notes
+
+## 1.1.0
+
+* **Breaking release** - Portrait filenames have changed and characters with a fairy portrait will need to re-set their
+  portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
+* Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits. 
+
+## 1.0.0
+
+* 6 Portraits
+* 50 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 hat, 8 back, 4 pants, 10 undies
+
+# Known Issues
 
 ### Items
+
 ![Beeg](site/beeg.png)
 
 Game items that appear on the character, like tools or some headpieces are not scaled down, so they appear comically
 large. For tools and weapons it's mostly amusing and stylistic, but clothing items look jarring.
 
 ### Zoom Aliasing
+
 ![Zoom](site/zoom.png)
 
 At the default zoom level the player sprites are slightly larger than the original sprite sheets. This causes some of
-the rows and columns to be duplicated, causing a wonky look. This happens with normal PCC sprites as well, but it's a lot
+the rows and columns to be duplicated, causing a wonky look. This happens with normal PCC sprites as well, but it's a
+lot
 more pronounced with the smaller sprites that rely on single-pixel details. This can be fixed by adjusting the zoom
 using the map tools button next to the minimap.
 
