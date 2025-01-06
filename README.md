@@ -1,7 +1,7 @@
 # Elin Fairies
 
 ----
-![Version Badge](https://img.shields.io/badge/version-1.0.0-blue)
+![Version Badge](https://img.shields.io/badge/version-1.1.0-blue)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-fairies)
 
 ### A Fairy PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
@@ -22,13 +22,15 @@ Fairy portraits are all full-body to reflect the smaller stature of the fae.
 
 ![Layer Comps](site/portraits.png)
 
-# Character Creation
+---
+
+## Character Creation
 
 Since the game cannot differentiate fairy sprites from default sprites, you'll often find that the initial random
 character will be confusing a mix of the two. Fairy sprites are all prefixed with `fairy` to make it easier to
 find compatible sprites.
 
-## Wings and Imports
+### Wings and Imports
 
 Since the back slot is not available during the initial character creator you will need to either
 use an import file with wings already set, or find a mirror in-game to adjust the back slot after creation.
@@ -39,24 +41,36 @@ You can find the mod folder by using the `Mod Viewer` on the title screen. Click
 `Open in Explorer`.
 Use the files in the `Template` folder with the `Import` function during character creation.
 
-# Github
+---
 
-https://github.com/n15g/elin-fairies
+## Installation
 
-# Release Notes
+a) Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3400287057).
 
-## 1.1.0
+or
+
+b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) and unzip the contents into the
+`Elin/Package` folder.
+
+---
+
+## Release Notes
+
+### 1.1.0
 
 * **Breaking release** - Portrait filenames have changed and characters with a fairy portrait will need to re-set their
   portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
-* Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits. 
+* Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits.
+* Aseprite dev tools have been extracted to their own [project](https://github.com/n15g/aseprite-elin-devtools).
 
-## 1.0.0
+### 1.0.0
 
 * 6 Portraits
 * 50 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 hat, 8 back, 4 pants, 10 undies
 
-# Known Issues
+---
+
+## Known Issues
 
 ### Items
 
@@ -75,7 +89,11 @@ lot
 more pronounced with the smaller sprites that rely on single-pixel details. This can be fixed by adjusting the zoom
 using the map tools button next to the minimap.
 
+---
+
 # Development
+
+---
 
 ## Requirements
 
@@ -83,7 +101,19 @@ using the map tools button next to the minimap.
 * **[Aseprite](https://www.aseprite.org/)** - For PCC sprites in `*.ase` format.
 * **Python** - Build scripts and various tooling.
 
-## Portrait Layer Comps
+---
+
+## PCC Sprites
+
+PCC sprite source files are **[Aseprite](https://www.aseprite.org/)** `.ase` files.
+
+A set of development tools for Aseprite as well as instructions for setting up PCC sprite files can be found at
+the [asprite-elin-devtools](https://github.com/n15g/aseprite-elin-devtools) project.
+
+
+---
+
+## Portraits
 
 Photoshop Layer Comps are used to output the overlay images for portraits.
 Unfortunately the output options don't work well with Elin's naming convention, so there's
@@ -104,36 +134,6 @@ To export a portrait:
     4. Set the `File Type` to `PNG-24.
     5. Hit `Run`.
 3. Run the Python script `dev/rename_layer_comps.py`
-   ```python dev/rename_layer_comps.py```
-
-### Aseprite
-
-Included in the `dev/aseprite` folder are `.pal` palette files and `.lua` script extensions for Aseprite.
-
-Both can be installed by running the `dev/aseprite/install-aseprite-extensions.py` python file, or manually copying
-into the appropriate folders by using the `File -> Scripts -> Open Scripts Folder` and the `Open Folder` button
-from the Palette list.
-
-### PCC sprites
-
-The `elin-pcc.lua` script is an export script that will compile layers and tags in an Aseprite document
-into the appropriate sprite sheets for Elin. See one of the existing `.ase` files for an example of how to set
-up a document for export.
-
-```
--- Elin sprite export script.
--- The script will look for a layer/group named `base_` as the basis for export and if not found,
--- default to the whole sprite.
--- For PCC files, the sprite sheet is split using tags to separate the 4 cardinal directions, 4 frames each:
---
--- [  front   ][   left   ][    right    ][     back     ]
--- [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16]
---
--- Special layer types:
---
--- Back sprites:
--- Some attachments have two sprites, one layered in front and one behind the player character.
--- During export, the script will look for a layer group named `_back` and if found use this layer group as the
--- basis for the `<type>bk` sprite.
-```
-
+   ```
+   python dev/rename_layer_comps.py
+   ```
