@@ -62,6 +62,7 @@ b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) 
   portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
 * Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits.
 * Aseprite dev tools have been extracted to their own [project](https://github.com/n15g/aseprite-elin-devtools).
+* Fixed placement of wing 5 back sprite.
 
 ### 1.0.0
 
