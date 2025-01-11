@@ -66,18 +66,19 @@ b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) 
 As an apology for the change, here's 4 new portraits and their associated sprite sets all with a "service" theme.
 
 * NEW - 4 new portraits; 3 female, 1 male.
-* NEW - 10 new sprites; 3 clothes, 1 glove, 3 hair, 2 head, 1 mantle.
-* NEW - 4 Templates
+* NEW - 12 new sprites; 3 clothes, 2 gloves, 4 hair, 2 head, 1 mantle.
+* NEW - 4 Templates.
 * FIX - Fixed placement of wing 5 back sprite.
 * FIX - Fixed sprite issue for glove 1.
 * FIX - Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits.
+* FIX - Coloring of bunny suit cloth/undie sprites has been darkened.
 * DEV - Aseprite dev tools have been extracted to their own [project](https://github.com/n15g/aseprite-elin-devtools).
 
 ### v1.0.0 - Genesis
 
-* NEW - 6 Portraits
-* NEW - 46 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 head, 8 mantle, 4 pants, 10 undies
-* NEW - 6 Templates
+* NEW - 6 Portraits.
+* NEW - 46 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 head, 8 mantle, 4 pants, 10 undies.
+* NEW - 6 Templates.
 
 ---
 
