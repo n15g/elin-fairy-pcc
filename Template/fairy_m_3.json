@@ -1,0 +1,46 @@
+{
+  "$id": "1",
+  "map": {
+    "$id": "2",
+    "body": [
+      "female",
+      "fairym1",
+      null
+    ],
+    "mantle": [
+      "female",
+      "fairy3",
+      "7E8E8EFF"
+    ],
+    "hair": [
+      "female",
+      "fairy7",
+      "B9AD73FF"
+    ],
+    "eye": [
+      "female",
+      "fairy2",
+      "2E1A16FF"
+    ],
+    "cloth": [
+      "female",
+      "fairy14",
+      null
+    ],
+    "glove": [
+      "female",
+      "fairy1",
+      "DAD4CBFF"
+    ],
+    "pants": [
+      "female",
+      "fairy2",
+      "464646FF"
+    ],
+    "boots": [
+      "female",
+      "fairy1",
+      "4C4434FF"
+    ]
+  }
+}

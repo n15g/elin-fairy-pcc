@@ -8,6 +8,16 @@
     <version>0.22.1</version>
     <tags>PCC,Portrait</tags>
     <description>
-        Fairy PCC sprites and portraits.
+        I love that Elin lets you play as a fairy character, but was disappointed that the base
+        game doesn't really offer any way to visually differentiate a fairy character from the other
+        races.
+
+        This mod adds new portraits and sprites for fairy characters that are much smaller than the default sprites,
+        including
+        a bunch of pretty fairy wings. The smaller stature of the PCC can cause some visual glitches, noted below, but
+        for the
+        most part it works well.
+
+        Fairy portraits are all full-body to reflect the smaller stature of the fae.
     </description>
 </Meta>
