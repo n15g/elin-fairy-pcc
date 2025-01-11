@@ -56,10 +56,15 @@ b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) 
 
 ## Release Notes
 
-### 1.1.0
+### v1.1.0 - At your service!
+
+![1.1.png](site/1.1.png)
 
 **Breaking release** - Portrait filenames have changed and characters with a fairy portrait will need to re-set their
   portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
+
+As an apology for the change, here's 4 new portraits and their associated sprite sets all with a "service" theme.
+
 * NEW - 4 new portraits; 3 female, 1 male.
 * NEW - 10 new sprites; 3 clothes, 1 glove, 3 hair, 2 head, 1 mantle.
 * NEW - 4 Templates
@@ -68,7 +73,7 @@ b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) 
 * FIX - Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits.
 * DEV - Aseprite dev tools have been extracted to their own [project](https://github.com/n15g/aseprite-elin-devtools).
 
-### 1.0.0
+### v1.0.0 - Genesis
 
 * NEW - 6 Portraits
 * NEW - 46 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 head, 8 mantle, 4 pants, 10 undies
