@@ -104,6 +104,16 @@ using the map tools button next to the minimap.
 
 ---
 
+# Licence
+
+The license for all content unless otherwise labelled is the [unlicense](LICENSE).
+
+You are free to copy and use any of the mod content however you want, including in other mods or games.
+
+Attribution is **not** required, but is always appreciated.
+
+---
+
 # Development
 
 ---
