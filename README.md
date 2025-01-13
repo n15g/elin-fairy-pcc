@@ -10,17 +10,17 @@ I love that Elin lets you play as a fairy character, but was disappointed that t
 game doesn't really offer any way to visually differentiate a fairy character from the other
 races.
 
-![Layer Comps](site/comparison.gif)
+![Comparison](site/comparison.gif)
 
 This mod adds new portraits and sprites for fairy characters that are much smaller than the default sprites, including
 a bunch of pretty fairy wings. The smaller stature of the PCC can cause some visual glitches, noted below, but for the
 most part it works well.
 
-![Layer Comps](site/sprite_showcase.gif)
+![Showcase](site/sprite_showcase.gif)
 
 Fairy portraits are all full-body to reflect the smaller stature of the fae.
 
-![Layer Comps](site/portraits.png)
+![Portraits](site/portraits.png)
 
 ---
 
@@ -58,10 +58,10 @@ b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) 
 
 ### v1.1.0 - At your service!
 
-![1.1.png](site/1.1.png)
+![v1.1](site/1.1.png)
 
 **Breaking release** - Portrait filenames have changed and characters with a fairy portrait will need to re-set their
-  portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
+portraits. This can be done in-game with a mirror, one of which can be found in the slave auction house in Derphy.
 
 As an apology for the change, here's 4 new portraits and their associated sprite sets all with a "service" theme.
 
@@ -70,7 +70,8 @@ As an apology for the change, here's 4 new portraits and their associated sprite
 * NEW - 4 Templates.
 * FIX - Fixed placement of wing 5 back sprite.
 * FIX - Fixed sprite issue for glove 1.
-* FIX - Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy portraits.
+* FIX - Fairy portraits have been re-labelled as special so that human NPCs will no longer randomly adopt fairy
+  portraits.
 * FIX - Coloring of bunny suit cloth/undie sprites has been darkened.
 * DEV - Aseprite dev tools have been extracted to their own [project](https://github.com/n15g/aseprite-elin-devtools).
 
