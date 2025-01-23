@@ -1,6 +1,6 @@
 # Elin Fairies
 
-----
+
 ![Version Badge](https://img.shields.io/badge/version-1.1.0-blue)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-fairy-pcc)
 
