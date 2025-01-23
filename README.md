@@ -2,7 +2,7 @@
 
 ----
 ![Version Badge](https://img.shields.io/badge/version-1.1.0-blue)
-![GitHub License](https://img.shields.io/github/license/n15g/elin-fairies)
+![GitHub License](https://img.shields.io/github/license/n15g/elin-fairy-pcc)
 
 ### A Fairy PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
 
@@ -49,7 +49,7 @@ a) Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedeta
 
 or
 
-b) Download the latest [release](https://github.com/n15g/elin-fairies/releases) and unzip the contents into the
+b) Download the latest [release](https://github.com/n15g/elin-fairy-pcc/releases) and unzip the contents into the
 `Elin/Package` folder.
 
 ---
