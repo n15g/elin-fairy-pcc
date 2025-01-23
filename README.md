@@ -1,6 +1,5 @@
 # Elin Fairies
 
-
 ![Version Badge](https://img.shields.io/badge/version-1.1.0-blue)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-fairy-pcc)
 
@@ -22,8 +21,6 @@ Fairy portraits are all full-body to reflect the smaller stature of the fae.
 
 ![Portraits](site/portraits.png)
 
----
-
 ## Character Creation
 
 Since the game cannot differentiate fairy sprites from default sprites, you'll often find that the initial random
@@ -41,8 +38,6 @@ You can find the mod folder by using the `Mod Viewer` on the title screen. Click
 `Open in Explorer`.
 Use the files in the `Template` folder with the `Import` function during character creation.
 
----
-
 ## Installation
 
 a) Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3400287057).
@@ -51,8 +46,6 @@ or
 
 b) Download the latest [release](https://github.com/n15g/elin-fairy-pcc/releases) and unzip the contents into the
 `Elin/Package` folder.
-
----
 
 ## Release Notes
 
@@ -81,8 +74,6 @@ As an apology for the change, here's 4 new portraits and their associated sprite
 * NEW - 46 PCC sprites - 2 body, 2 boots, 12 clothes, 2 eye, 1 glove, 4 hair, 1 head, 8 mantle, 4 pants, 10 undies.
 * NEW - 6 Templates.
 
----
-
 ## Known Issues
 
 ### Items
@@ -102,8 +93,6 @@ lot
 more pronounced with the smaller sprites that rely on single-pixel details. This can be fixed by adjusting the zoom
 using the map tools button next to the minimap.
 
----
-
 # Licence
 
 The license for all content unless otherwise labelled is the [unlicense](LICENSE).
@@ -112,11 +101,7 @@ You are free to copy and use any of the mod content however you want, including 
 
 Attribution is **not** required, but is always appreciated.
 
----
-
 # Development
-
----
 
 ## Requirements
 
@@ -124,17 +109,12 @@ Attribution is **not** required, but is always appreciated.
 * **[Aseprite](https://www.aseprite.org/)** - For PCC sprites in `*.ase` format.
 * **Python** - Build scripts and various tooling.
 
----
-
 ## PCC Sprites
 
 PCC sprite source files are **[Aseprite](https://www.aseprite.org/)** `.ase` files.
 
 A set of development tools for Aseprite as well as instructions for setting up PCC sprite files can be found at
 the [asprite-elin-devtools](https://github.com/n15g/aseprite-elin-devtools) project.
-
-
----
 
 ## Portraits
 
