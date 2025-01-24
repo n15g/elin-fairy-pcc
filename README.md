@@ -1,6 +1,7 @@
 # Elin Fairies
 
-![Version Badge](https://img.shields.io/badge/version-1.1.0-blue)
+![Version Badge](https://img.shields.io/github/v/release/n15g/elin-fairy-pcc)
+[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3400287057)](https://steamcommunity.com/sharedfiles/filedetails/?id=3400287057)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-fairy-pcc)
 
 ### A Fairy PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
