@@ -121,7 +121,7 @@ the [asprite-elin-devtools](https://github.com/n15g/aseprite-elin-devtools) proj
 
 Photoshop Layer Comps are used to output the overlay images for portraits.
 Unfortunately the output options don't work well with Elin's naming convention, so there's
-a small python script to rename the default filenames.
+a python task to rename the default filenames.
 
 To export a portrait:
 
@@ -137,7 +137,7 @@ To export a portrait:
     3. Un-check the `File Name Prefix` checkbox.
     4. Set the `File Type` to `PNG-24.
     5. Hit `Run`.
-3. Run the Python script `dev/rename_layer_comps.py`
+3. Run the `portrait-layers` task.
    ```
-   python dev/rename_layer_comps.py
+   python -i invoke portrait-layers
    ```
