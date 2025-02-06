@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+    <title>{{tool.elin.title}}</title>
+    <id>{{project.name}}</id>
+    <author>{{tool.elin.author}}</author>
+    <loadPriority>100</loadPriority>
+    <builtin>false</builtin>
+    <version>0.22.1</version>
+    <tags>{{tool.elin.tags}}</tags>
+    <description>
+        {{project.description}}
+    </description>
+</Meta>
