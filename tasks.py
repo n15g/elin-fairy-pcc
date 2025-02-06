@@ -98,3 +98,9 @@ def dist(cmd):
     bundle_name = f"{config.package_name}-v{config.version}"
     bundle_path = os.path.join(config.dist_dir, bundle_name)
     project.mkarchive(config.build_dir, bundle_path)
+
+
+@task
+@log_call
+def portrait_layers(cmd):
+    project.rename_layer_comps(os.path.join(config.src_dir, "Portrait"))

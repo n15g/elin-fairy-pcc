@@ -18,7 +18,7 @@ class CopyResult(Enum):
     UPDATED = 2
     MISSING = 3
 
-    def print(self):
+    def print(self) -> str:
         match self:
             case CopyResult.UNMODIFIED:
                 return f"{COLOR.WHITE}✔{COLOR.RESET}"
@@ -32,7 +32,7 @@ class CopyResult(Enum):
                 return f"{COLOR.YELLOW}?{COLOR.RESET}"
 
 
-def mkdir(path: str):
+def mkdir(path: str) -> None:
     if not os.path.exists(path):
         os.makedirs(path, exist_ok=True)
         print(f"[{COLOR.GREEN}C{COLOR.RESET}] {path}")
@@ -44,7 +44,7 @@ def rmdir(path: str) -> None:
         shutil.rmtree(path)
 
 
-def copy_file(src: str, dst: str):
+def copy_file(src: str, dst: str) -> None:
     dst_path = os.path.join(dst, os.path.basename(src)) if os.path.isdir(dst) else dst
 
     if not os.path.exists(src):
@@ -60,7 +60,16 @@ def copy_file(src: str, dst: str):
     print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {dst_path}")
 
 
-def copy_template(src: str, dst: str):
+def rename_file(src: str, dst: str) -> None:
+    if os.path.exists(src):
+        existed = os.path.exists(dst)
+        os.replace(src, dst)
+        print(f"[{CopyResult.UPDATED.print() if existed else CopyResult.CREATED.print()}] {dst}")
+    else:
+        print(f"[{CopyResult.UNMODIFIED.print() if os.path.exists(dst) else CopyResult.MISSING.print()}] {dst}")
+
+
+def copy_template(src: str, dst: str) -> None:
     dst_path = os.path.join(dst, os.path.basename(src)) if os.path.isdir(dst) else dst
 
     if not os.path.exists(src):
@@ -85,7 +94,7 @@ def copy_template(src: str, dst: str):
             print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {dst_path}")
 
 
-def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None):
+def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None) -> None:
     files = glob.glob(os.path.join(config.root, src, _glob), recursive=True)
     for file in files:
         rel_path = os.path.relpath(file, src)
@@ -102,7 +111,17 @@ def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None):
         copy_file(src_path, dst_path)
 
 
-def mkarchive(src: str, dst: str):
+def mkarchive(src: str, dst: str) -> None:
     print(dst, "zip", src)
     shutil.make_archive(dst, "zip", src)
     print(f"[{COLOR.GREEN}C{COLOR.RESET}] {dst}.zip")
+
+
+def rename_layer_comps(tgt_dir: str) -> None:
+    files = glob.glob(os.path.join(tgt_dir, "*.png"))
+    for file in files:
+        if file.endswith("_base.png"):
+            rename_file(file, file.replace("_base.png", ".png"))
+
+        if file.endswith("_overlay.png"):
+            rename_file(file, file.replace("_overlay.png", "-overlay.png"))
